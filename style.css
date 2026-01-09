@@ -50,8 +50,12 @@ nav a:hover {
   position: fixed;
   top: 120px;
   width: 200px;
-  height: auto;
+  height: 600px;
+  object-fit: cover;
   z-index: 0;
+  opacity: 0.85;
+  border-radius: 8px;
+  pointer-events: none;
 }
 
 .side-banner.left {
