@@ -49,13 +49,20 @@ nav a:hover {
 .side-banner {
   position: fixed;
   top: 120px;
-  width: 150px;
+  width: 200px;
   height: 600px;
   object-fit: cover;
   z-index: 0;
   opacity: 0.85;
-  border-radius: 8px;
   pointer-events: none;
+
+  clip-path: polygon(
+    0% 0%,     /* top-left */
+    100% 0%,   /* top-right */
+    100% 85%,  /* right before bottom */
+    50% 100%,  /* sharp V point */
+    0% 85%     /* left before bottom */
+  );
 }
 
 .side-banner.left {
@@ -66,7 +73,7 @@ nav a:hover {
   right: 20px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .side-banner {
     display: none;
   }
