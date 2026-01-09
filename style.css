@@ -45,3 +45,19 @@ nav a:hover {
 .section-text {
   flex: 1;
 }
+
+.side-banner {
+  position: fixed;
+  top: 120px;
+  width: 200px;
+  height: auto;
+  z-index: 0;
+}
+
+.side-banner.left {
+  left: 20px;
+}
+
+.side-banner.right {
+  right: 20px;
+}
