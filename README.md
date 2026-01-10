@@ -1,2 +1,2 @@
 # Admissions
-Imformation on Oxbridge University Admissions
+Information on Oxbridge University Admissions
