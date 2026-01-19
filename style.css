@@ -81,15 +81,17 @@ nav a:hover {
 
 
 <style>
-/* Basic menu layout */
+/* Top-level menu: horizontal */
 .menu {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
-  gap: 20px;
+  gap: 1.5rem;
+  align-items: center;
 }
 
+/* All menu items */
 .menu li {
   position: relative;
 }
@@ -97,28 +99,35 @@ nav a:hover {
 /* Links */
 .menu a {
   text-decoration: none;
-  padding: 8px 12px;
-  display: block;
-  color: black;
+  color: inherit;              /* uses your existing title colour */
+  font-weight: 500;
+  padding: 6px 8px;
 }
 
-/* Dropdown content */
+/* Subtle hover effect */
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown box */
 .dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   list-style: none;
-  padding: 0;
+  padding: 0.5rem 0;
   margin: 0;
-  background: white;
-  border: 1px solid #ccc;
-  min-width: 160px;
+  background-color: white;
+  border: 1px solid #ddd;
+  min-width: 220px;
+  z-index: 1000;
 }
 
-/* Dropdown links */
+/* Dropdown items stay vertical */
 .dropdown-content li a {
-  padding: 8px 12px;
+  padding: 6px 16px;
+  white-space: nowrap;
 }
 
 /* Show dropdown on hover */
