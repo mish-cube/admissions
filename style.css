@@ -130,6 +130,12 @@ nav a:hover {
   white-space: nowrap;
 }
 
+.dropdown-content li:nth-child(2) {
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
