@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acknowledgements</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <img src="my_college.png" class="side-banner left" alt="">
+  <img src="notmy_college.png" class="side-banner right" alt="">
+  <h1>Acknowledgements</h1>
+
+  
+  <div id="nav-placeholder"></div>
+
+
+  <div class="section">
+    <div class="section-text">
+      <p>To my chief editor and advisor - the wonderful Kristina Shaw - thank you for your endless patience, perspective, and passion.</p>
+      <p>To those who contributed to <strong>Interview</strong> - bless your souls. Researching, recording, editing, and digging into the halycon recesses of secondary school memory is a precious commodity of time and effort that I'm sincerely grateful for.</p>
+      <p>To my friends who offered encouragement or counselling on early versions - thank you. The high standard you hold yourselves and those around you to was a big motivating factor... I appreciate the accountability.</p>
+    </div>
+  </div>
+
+  
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+  
+</body>
+
+</html>
