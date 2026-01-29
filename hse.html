@@ -1,57 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>High School Exams</title>
+    <title>Secondary School Exams</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+
 <body>
   <img src="my_college.png" class="side-banner left" alt="">
   <img src="notmy_college.png" class="side-banner right" alt="">
-  <h1>High School Exams</h1>
+  <h1>Secondary School Exams</h1>
 
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="ccc.html">Course and College</a></li>
-      <li><a href="hse.html">High School Exams</a></li>
-      <li><a href="ps.html">Personal Statement</a></li>
   
-      <li class="dropdown">
-        <a href="#">Admissions Tests ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="at.html">Overview</a></li>
-          <li><a href="at.html#ESAT">ESAT</a></li>
-          <li><a href="at.html#PAT">PAT</a></li>
-          <li><a href="at.html#TMUA">TMUA</a></li>
-          <li><a href="at.html#MAT">MAT</a></li>
-          <li><a href="at.html#STEP">STEP</a></li>
-        </ul>
-      </li>
-  
-      <li class="dropdown">
-        <a href="#">Interview ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="i.html">Overview</a></li>
-          <li><a href="i.html#AMES">AMES</a></li>
-          <li><a href="i.html#BIOLOGY">Biology</a></li>
-          <li><a href="i.html#CHEMISTRY">Chemistry</a></li>
-          <li><a href="i.html#CLASSICS">Classics</a></li>
-          <li><a href="i.html#COMSCI">Computer Science</a></li>
-          <li><a href="i.html#ECONOMICS">Economics</a></li>
-          <li><a href="i.html#ENGLISH">English</a></li>
-          <li><a href="i.html#HISTORY">History</a></li>
-          <li><a href="i.html#HSPS">HSPS</a></li>
-          <li><a href="i.html#LAW">Law</a></li>
-          <li><a href="i.html#MATHS">Maths</a></li>
-          <li><a href="i.html#MML">MML</a></li>
-          <li><a href="i.html#MUSIC">Music</a></li>
-          <li><a href="i.html#NATSCI">Natural Sciences</a></li>
-          <li><a href="i.html#PHYSICS">Physics</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+  <div id="nav-placeholder"></div>
 
 
   <div class="section">
@@ -84,8 +44,15 @@
       <p>The caveat here is - you'll need to catch up academically to everybody else anyway if you're to stand a chance at interviews or admissions tests. So it's sometimes easier to get a foot in the door, but potentially harder to actually execute it. As a contrast, the Chinese Gaokao is on the whole more difficult than A levels, so Chinese students tend to find admissions tests relatively easier - but interviewing in a second language is really hard, and this step is fatal instead.</p>
     </div>
   </div>
-
+  
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
   
 </body>
-  </body>
+
 </html>
