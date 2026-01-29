@@ -146,3 +146,16 @@ nav a:hover {
   text-decoration: underline; /* only underline */
   font-weight: normal;   /* not bold */
 }
+
+.video-row {
+  display: flex;
+  gap: 20px;              /* space between videos */
+  justify-content: center; /* center the row */
+  flex-wrap: wrap;         /* stack on small screens */
+  margin-bottom: 40px;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
