@@ -5,81 +5,13 @@
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="t80v2HGUftRgJStppLnAC_LbO6qjQW3Zp3WCyoFhpWg" />
   </head>
-  <body>
+
 <body>
   <img src="my_college.png" class="side-banner left" alt="">
   <img src="notmy_college.png" class="side-banner right" alt="">
   <h1>Oxbridge Admissions</h1>
 
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      
-      <li class="dropdown">
-        <a href="#">Course and College ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="ccc.html">Overview</a></li>
-          <li><a href="ccc.html#cacc">Course and College Choice</a></li>
-          <li><a href="ccc.html#svis">State vs Independent Schools</a></li>
-          <li><a href="ccc.html#lvis">Local vs International Students</a></li>
-          <li><a href="ccc.html#of">Other Factors</a></li>
-        </ul>
-      </li>
-      
-      <li class="dropdown">
-        <a href="#">Secondary School Exams ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="hse.html">A Levels</a></li>
-          <li><a href="hse.html#os">Other Systems</a></li>
-        </ul>
-      </li>
-          
-      <li class="dropdown">
-        <a href="#">Personal Statement ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="ps.html">Overview</a></li>
-          <li><a href="ps.html#ttq">The Three Questions</a></li>
-          <li><a href="ps.html#is">Impressive Supercurriculars</a></li>
-          <li><a href="ps.html#uoa">Use of AI</a></li>
-          <li><a href="ps.html#ur">UCAS References</a></li>
-        </ul>
-      </li>
-  
-      <li class="dropdown">
-        <a href="#">Admissions Tests ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="at.html">Overview</a></li>
-          <li><a href="at.html#ESAT">ESAT</a></li>
-          <li><a href="at.html#PAT">PAT</a></li>
-          <li><a href="at.html#TMUA">TMUA</a></li>
-          <li><a href="at.html#MAT">MAT</a></li>
-          <li><a href="at.html#STEP">STEP</a></li>
-        </ul>
-      </li>
-  
-      <li class="dropdown">
-        <a href="#">Interview ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="i.html">Overview</a></li>
-          <li><a href="i.html#AMES">AMES</a></li>
-          <li><a href="i.html#BIOLOGY">Biology</a></li>
-          <li><a href="i.html#CHEMISTRY">Chemistry</a></li>
-          <li><a href="i.html#CLASSICS">Classics</a></li>
-          <li><a href="i.html#COMSCI">Computer Science</a></li>
-          <li><a href="i.html#ECONOMICS">Economics</a></li>
-          <li><a href="i.html#ENGLISH">English</a></li>
-          <li><a href="i.html#HISTORY">History</a></li>
-          <li><a href="i.html#HSPS">HSPS</a></li>
-          <li><a href="i.html#LAW">Law</a></li>
-          <li><a href="i.html#MATHS">Maths</a></li>
-          <li><a href="i.html#MML">MML</a></li>
-          <li><a href="i.html#MUSIC">Music</a></li>
-          <li><a href="i.html#NATSCI">Natural Sciences</a></li>
-          <li><a href="i.html#PHYSICS">Physics</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+<div id="nav-placeholder"></div>
 
   <div class="section">
     <img src="hamish.jpg" alt="Hamish">
@@ -115,7 +47,15 @@
   </div>
 
   <img src="subject.png" alt="Subject" width="700" style="display: block; margin: 0 auto;">
+
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
   
 </body>
-  </body>
+
 </html>
