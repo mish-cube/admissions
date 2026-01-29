@@ -4,7 +4,7 @@
     <title>Course and College Choices</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+
 <body>
   <img src="my_college.png" class="side-banner left" alt="">
   <img src="notmy_college.png" class="side-banner right" alt="">
@@ -121,8 +121,16 @@
   <img src="gender.png" alt="Gender" width="930">
   <img src="disability.png" alt="Disability" width="800">
   <img src="disadvantage.png" alt="Disadvantage" width="880"><br><br>
-  
+
+    
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
   
 </body>
-  </body>
+
 </html>
