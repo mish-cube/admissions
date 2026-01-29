@@ -5,53 +5,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
-  <body>
+
 <body>
   <img src="my_college.png" class="side-banner left" alt="">
   <img src="notmy_college.png" class="side-banner right" alt="">
   <h1>Admissions Tests</h1>
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="ccc.html">Course and College</a></li>
-      <li><a href="hse.html">High School Exams</a></li>
-      <li><a href="ps.html">Personal Statement</a></li>
-  
-      <li class="dropdown">
-        <a href="#">Admissions Tests ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="at.html">Overview</a></li>
-          <li><a href="at.html#ESAT">ESAT</a></li>
-          <li><a href="at.html#PAT">PAT</a></li>
-          <li><a href="at.html#TMUA">TMUA</a></li>
-          <li><a href="at.html#MAT">MAT</a></li>
-          <li><a href="at.html#STEP">STEP</a></li>
-        </ul>
-      </li>
-  
-      <li class="dropdown">
-        <a href="#">Interview ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="i.html">Overview</a></li>
-          <li><a href="i.html#AMES">AMES</a></li>
-          <li><a href="i.html#BIOLOGY">Biology</a></li>
-          <li><a href="i.html#CHEMISTRY">Chemistry</a></li>
-          <li><a href="i.html#CLASSICS">Classics</a></li>
-          <li><a href="i.html#COMSCI">Computer Science</a></li>
-          <li><a href="i.html#ECONOMICS">Economics</a></li>
-          <li><a href="i.html#ENGLISH">English</a></li>
-          <li><a href="i.html#HISTORY">History</a></li>
-          <li><a href="i.html#HSPS">HSPS</a></li>
-          <li><a href="i.html#LAW">Law</a></li>
-          <li><a href="i.html#MATHS">Maths</a></li>
-          <li><a href="i.html#MML">MML</a></li>
-          <li><a href="i.html#MUSIC">Music</a></li>
-          <li><a href="i.html#NATSCI">Natural Sciences</a></li>
-          <li><a href="i.html#PHYSICS">Physics</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+
+  <div id="nav-placeholder"></div>
 
   <div class="section">
     <div class="section-text">
@@ -203,10 +163,16 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/QD3PH6HxI3Y?si=luDsow8yytSTXeI9" title="STEP Preparation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
 
 
 
 </body>
-  </body>
+
 </html>
