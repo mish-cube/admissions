@@ -166,24 +166,14 @@ nav a:hover {
   }
 }
 
-/* Hidden by default (desktop) */
-.mobile-banner {
-  display: none;
-}
-
-/* Show only on mobile */
 @media (max-width: 800px) {
   .mobile-banner {
     display: block;
     position: fixed;
     top: 10px;
     right: 10px;
-    background: #0066cc;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: bold;
+    width: 120px;
+    height: auto;
     z-index: 9999;
   }
 }
