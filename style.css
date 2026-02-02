@@ -159,3 +159,31 @@ nav a:hover {
   max-width: 100%;
   border-radius: 10px;
 }
+
+@media (max-width: 800px) {
+  body {
+    padding: 0 16px;
+  }
+}
+
+/* Hidden by default (desktop) */
+.mobile-banner {
+  display: none;
+}
+
+/* Show only on mobile */
+@media (max-width: 800px) {
+  .mobile-banner {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #0066cc;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 9999;
+  }
+}
