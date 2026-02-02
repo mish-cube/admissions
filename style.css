@@ -78,6 +78,11 @@ nav a:hover {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  body {
+    padding: 0 16px;
+  }
+}
 
 
 /* Top-level menu: horizontal */
@@ -160,24 +165,4 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* Hide by default (desktop) */
-.mobile-banner {
-  display: none;
-}
 
-/* Mobile only */
-@media (max-width: 800px) {
-  .mobile-banner {
-    display: block;
-    position: fixed;
-    top: 12px;
-    right: 12px;
-
-    width: 70px;   /* SMALL */
-    height: auto;
-
-    z-index: 9999;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-  }
-}
