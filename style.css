@@ -87,6 +87,9 @@ nav a:hover {
 details[open] summary {
   margin-bottom: 10px;
 }
+.section {
+  align-items: flex-start;
+}
 
 .menu {
   list-style: none;
